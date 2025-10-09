@@ -1,0 +1,40 @@
+LAB TASK#01
+
+num = int(input("Enter a number: "))
+for i in range(1, 11):
+    print(num, "x", i, "=", num * i)
+
+-----------------------------------------------
+LAB TASK #02
+
+-----------------------------------------------
+LAB TASK #03
+
+i = 1
+while (i <= 10):
+    print(i)
+    i = i+1
+j = 1
+while (j <= 20):
+    if (j%2==0):
+        print(j)
+    j=j+1
+
+------------------------------------------------
+LAB TASK #04
+
+num=int(input("enter a number:"))
+original=num
+sum=digits=0
+while(num>0):
+    digits=num%10
+    sum=sum+digits
+    num//=10
+if(original%sum==0):
+    print(original," is harshad number")
+else:
+    print(original," is not a harshad number")
+
+--------------------------------------------------
+
+
