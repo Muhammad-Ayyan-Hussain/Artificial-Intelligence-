@@ -1,0 +1,66 @@
+LAB TASK #01
+
+Lists=['abc','xyz','aba','1221','xyzzyx','aa','122']
+count=0
+for List in Lists:
+    if(len(List)>=2):
+        if(List[0]==List[-1]):
+            count=count+1
+print("count=",count)
+
+-------------------------------------------------------------
+LAB TASK #02
+
+tupe=(1,2,4,2,6)
+sum=0
+product=1
+for i in range(0,len(tupe)):
+    sum=sum+tupe[i]
+    product=product*tupe[i]
+print("sum=",sum)
+print("product=",product)
+
+-------------------------------------------------------------
+LAB TASK #03
+
+List=(1,2,4,2,6)
+largest=0
+for i in range(0,len(List)):
+    if(List[i]>largest):
+        largest=List[i]
+print("Largest=",largest)
+
+--------------------------------------------------------------
+LAB TASK #04
+
+L = [(),(),('',),('a', 'b'),(),('a','b','c'),(),('d',)]
+L = [t for t in L if t!=()]
+print(L)
+
+--------------------------------------------------------------
+LAB TASK #05
+
+n=int(input("Input a number: "))
+result={str(x):x*x for x in range(1,n+1)}
+print(result)
+
+--------------------------------------------------------------
+LAB TASK #06
+
+word={
+    '0': 'Zero',
+    '1': 'One',
+    '2': 'Two',
+    '3': 'Three',
+    '4': 'Four',
+    '5': 'Five',
+    '6': 'Six',
+    '7': 'Seven',
+    '8': 'Eight',
+    '9': 'Nine'
+}
+num=input("Input a number:")
+words=[word[digit] for digit in num if digit in word]
+print(" ".join(words))
+
+-------------------------------------------------------------------
